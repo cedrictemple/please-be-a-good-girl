@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://PLAYER/ART/Color01/00_IDLE/c00a_01idle_06.png" type="Texture" id=1]
 [ext_resource path="res://PLAYER/ART/Color01/00_IDLE/c00a_01idle_04.png" type="Texture" id=2]
@@ -56,11 +56,19 @@ animations = [ {
 "speed": 13.0
 } ]
 
-[node name="Player" type="Node2D"]
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 17.2741, 25.5698 )
+
+[node name="Player" type="KinematicBody2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.2, 0.2 )
 frames = SubResource( 1 )
 animation = "IDLE"
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 2.37841, 1.4865 )
+shape = SubResource( 2 )
