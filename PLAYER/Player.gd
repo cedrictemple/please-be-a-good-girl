@@ -33,7 +33,7 @@ func playAnimation(animationName):
 
 func _physics_process(delta):
 # Horizontal movement code. First, get the player's input.
-	var walk = WALK_FORCE * (Input.get_action_strength("right") - Input.get_action_strength("left"))
+	var walk = WALK_FORCE * (Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left"))
 	# play animation idle or walk
 	if (abs(velocity.x) == 0.0 &&  is_on_floor()):
 		playAnimation("IDLE")
@@ -59,6 +59,6 @@ func _physics_process(delta):
 	velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
 
 	# Check for jumping. is_on_floor() must be called after movement code.
-	if is_on_floor() and Input.is_action_just_pressed("up"):
+	if is_on_floor() and Input.is_action_just_pressed("ui_up"):
 		playAnimation("JUMP")
 		velocity.y = -JUMP_SPEED
