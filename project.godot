@@ -21,6 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Please-be-a-goog-girl"
+run/main_scene="res://WORLD.tscn"
 config/icon="res://icon.png"
 
 [gdnative]
