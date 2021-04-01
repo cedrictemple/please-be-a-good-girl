@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://MENU/Future TimeSplitters.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://MENU/Background_menu.png" type="Texture" id=2]
 [ext_resource path="res://MENU/StartButton.gd" type="Script" id=3]
+[ext_resource path="res://MENU/CreditsButton.gd" type="Script" id=4]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://MENU/Future TimeSplitters.otf"
@@ -58,6 +59,7 @@ margin_top = -49.0
 margin_right = 41.0
 custom_fonts/font = SubResource( 3 )
 text = "Credits"
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
