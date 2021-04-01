@@ -40,8 +40,22 @@ margin_top = -100.0
 margin_right = 420.5
 margin_bottom = 100.0
 bbcode_enabled = true
-bbcode_text = "Please, Be a Good Girl is a 2D Game under GPLv3 License, created by Cédric Temple. Code is available on GitHub (https://github.com/cedrictemple/please-be-a-good-girl/)."
-text = "Please, Be a Good Girl is a 2D Game under GPLv3 License, created by Cédric Temple. Code is available on GitHub (https://github.com/cedrictemple/please-be-a-good-girl/)."
+bbcode_text = "Please, Be a Good Girl is a 2D Game under GPLv3 License, created by Cédric Temple. Code is available on GitHub (https://github.com/cedrictemple/please-be-a-good-girl/).
+
+Main character credits to Pipoya (https://pipoya.itch.io/pipoya-free-2d-game-character-sprites) under license :
+- For commercial or personal use.
+- Use and edit freely.
+- Not redistribute or resell this assets.
+- It can be used for game development and other productions
+"
+text = "Please, Be a Good Girl is a 2D Game under GPLv3 License, created by Cédric Temple. Code is available on GitHub (https://github.com/cedrictemple/please-be-a-good-girl/).
+
+Main character credits to Pipoya (https://pipoya.itch.io/pipoya-free-2d-game-character-sprites) under license :
+- For commercial or personal use.
+- Use and edit freely.
+- Not redistribute or resell this assets.
+- It can be used for game development and other productions
+"
 fit_content_height = true
 scroll_active = false
 __meta__ = {
