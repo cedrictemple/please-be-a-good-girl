@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://MENU/Future TimeSplitters.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://MENU/Background_menu.png" type="Texture" id=2]
+[ext_resource path="res://MENU/StartButton.gd" type="Script" id=3]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://MENU/Future TimeSplitters.otf"
@@ -42,6 +43,7 @@ margin_right = 32.0
 margin_bottom = 24.5
 custom_fonts/font = SubResource( 3 )
 text = "Start"
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
