@@ -26,7 +26,7 @@ func _ready():
 func playAnimation(animationName):
 	if (not animatedSprite.get_animation() == animationName):
 		animatedSprite.stop()
-		print ("animatedSprite.play ",animationName, " : ", velocity.x , ", ",velocity.y)
+		# print ("animatedSprite.play ",animationName, " : ", velocity.x , ", ",velocity.y)
 		animatedSprite.play(animationName)
 	
 
