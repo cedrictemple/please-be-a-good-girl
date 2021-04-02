@@ -1,16 +1,21 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://CREDITS/CloseButton.gd" type="Script" id=1]
+[ext_resource path="res://MENU/texgyrechorus-mediumitalic.otf" type="DynamicFontData" id=2]
 
 [sub_resource type="DynamicFontData" id=1]
-font_path = "res://MENU/Future TimeSplitters.otf"
+font_path = "res://MENU/texgyrechorus-mediumitalic.otf"
 
 [sub_resource type="DynamicFont" id=2]
 size = 80
 font_data = SubResource( 1 )
 
+[sub_resource type="DynamicFont" id=5]
+size = 24
+font_data = ExtResource( 2 )
+
 [sub_resource type="DynamicFontData" id=3]
-font_path = "res://MENU/Future TimeSplitters.otf"
+font_path = "res://MENU/texgyrechorus-mediumitalic.otf"
 
 [sub_resource type="DynamicFont" id=4]
 size = 60
@@ -21,11 +26,12 @@ font_data = SubResource( 3 )
 [node name="Title" type="Label" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -70.5
-margin_right = 70.5
-margin_bottom = 85.0
+margin_left = -97.5
+margin_top = 3.0
+margin_right = 97.5
+margin_bottom = 88.0
 custom_fonts/font = SubResource( 2 )
-text = "Credits"
+text = "CREDITS"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -35,10 +41,11 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -420.5
-margin_top = -100.0
-margin_right = 420.5
-margin_bottom = 100.0
+margin_left = -521.0
+margin_top = -229.0
+margin_right = 521.0
+margin_bottom = 229.0
+custom_fonts/normal_font = SubResource( 5 )
 bbcode_enabled = true
 bbcode_text = "Please, Be a Good Girl is a 2D Game under GPLv3 License, created by Cédric Temple. Code is available on GitHub (https://github.com/cedrictemple/please-be-a-good-girl/).
 
@@ -70,15 +77,15 @@ __meta__ = {
 
 [node name="CloseButton" type="Button" parent="."]
 anchor_left = 0.5
-anchor_top = 0.951
+anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -45.0
-margin_top = -60.72
-margin_right = 45.0
-margin_bottom = -26.0
+margin_left = -57.0
+margin_top = -91.0
+margin_right = 57.0
+margin_bottom = -21.0
 custom_fonts/font = SubResource( 4 )
-text = "Close"
+text = "CLOSE"
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
