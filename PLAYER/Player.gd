@@ -18,7 +18,7 @@ var gravity
 func _ready():
 	animatedSprite = get_node("AnimatedSprite")
 	moving = false
-	isJumping = false
+	isJumping = true
 	velocity = Vector2()
 	animatedSprite.play("IDLE")
 	gravity = 500 #ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -40,8 +40,10 @@ func _physics_process(delta):
 	elif (abs(velocity.x) > 0.5 && is_on_floor()):
 		animatedSprite.set_flip_h(velocity.x > 0.0)
 		playAnimation("WALK")
-	if (not is_on_floor()):
+	if (isJumping):
 		playAnimation("JUMP")
+	if (is_on_floor()):
+		isJumping = false
 	
 	# Slow down the player if they're not trying to move.
 	if abs(walk) < WALK_FORCE * 0.2:
@@ -61,4 +63,5 @@ func _physics_process(delta):
 	# Check for jumping. is_on_floor() must be called after movement code.
 	if is_on_floor() and Input.is_action_just_pressed("ui_up"):
 		playAnimation("JUMP")
+		isJumping = true
 		velocity.y = -JUMP_SPEED
