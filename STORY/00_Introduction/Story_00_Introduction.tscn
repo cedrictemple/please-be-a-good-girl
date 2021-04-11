@@ -23,7 +23,7 @@ custom_fonts/mono_font = SubResource( 1 )
 bbcode_enabled = true
 bbcode_text = "Once upon a time, a little girl, was eating with his father.
 [b]The father : [/b] Please, be a good girl, eat all your food
-[b] The little Girl : [/b] No, I don't want to eat all my food, it's monday
+[b]The little Girl : [/b] No, I don't want to eat all my food, it's monday
 
 [b]The father : [/b] Then ?
 [b]The little Girl : [/b] Then, you know !
@@ -41,7 +41,7 @@ bbcode_text = "Once upon a time, a little girl, was eating with his father.
 [b]The little Girl : [/b] Thanks !"
 text = "Once upon a time, a little girl, was eating with his father.
 The father :  Please, be a good girl, eat all your food
- The little Girl :  No, I don't want to eat all my food, it's monday
+The little Girl :  No, I don't want to eat all my food, it's monday
 
 The father :  Then ?
 The little Girl :  Then, you know !
