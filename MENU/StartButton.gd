@@ -9,6 +9,6 @@ func _ready():
 		print("Error : could not attach callback to start button in menu scene")
 
 func _button_pressed():
-	var status = get_tree().change_scene("res://LEVELS/LEVEL01/LEVEL01.tscn")
+	var status = get_tree().change_scene("res://STORY/00_Introduction/Story_00_Introduction.tscn")
 	if ( status != OK ):
-		print("Error : could not load LEVEL01 scene from menu scene")
+		print("Error : could not load 00_Introduction scene from menu scene")
