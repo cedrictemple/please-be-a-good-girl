@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://MENU/texgyrechorus-mediumitalic.otf" type="DynamicFontData" id=1]
+
+[sub_resource type="DynamicFont" id=1]
+size = 48
+font_data = ExtResource( 1 )
+
+[node name="Story_00_Introduction" type="CanvasLayer"]
+
+[node name="OnceUponATime" type="RichTextLabel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -286.0
+margin_top = -173.5
+margin_right = 286.0
+margin_bottom = 173.5
+custom_fonts/mono_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "Once upon a time, a little girl, was eating with his father.
+[b]The father : [/b] Please, be a good girl, eat all your food
+[b] The little Girl : [/b] No, I don't want to eat all my food, it's monday
+
+[b]The father : [/b] Then ?
+[b]The little Girl : [/b] Then, you know !
+
+[b]The father : [/b] No, tell me.
+[b]The little Girl : [/b] It's Green Monday ! I don't eat meat or fish.
+
+[b]The father : [/b] Enough ! You bothered me
+[b]The little Girl : [/b] I bothered you but I won't eat meat today.
+
+[b]The father : [/b] It's not the kind of thing you say to your father, you're a little girl, you will do what I say
+[b]The little Girl : [/b] I'll never do what people wants if it's not what I want and, furthermore, if what they want is against me or my future
+
+[b]The father : [/b] Enough is enough ! I punish you ! Go in the cave, thinking of what you have said !
+[b]The little Girl : [/b] Thanks !"
+text = "Once upon a time, a little girl, was eating with his father.
+The father :  Please, be a good girl, eat all your food
+ The little Girl :  No, I don't want to eat all my food, it's monday
+
+The father :  Then ?
+The little Girl :  Then, you know !
+
+The father :  No, tell me.
+The little Girl :  It's Green Monday ! I don't eat meat or fish.
+
+The father :  Enough ! You bothered me
+The little Girl :  I bothered you but I won't eat meat today.
+
+The father :  It's not the kind of thing you say to your father, you're a little girl, you will do what I say
+The little Girl :  I'll never do what people wants if it's not what I want and, furthermore, if what they want is against me or my future
+
+The father :  Enough is enough ! I punish you ! Go in the cave, thinking of what you have said !
+The little Girl :  Thanks !"
+__meta__ = {
+"_edit_use_anchors_": false
+}

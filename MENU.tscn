@@ -11,13 +11,13 @@ font_path = "res://MENU/texgyrechorus-mediumitalic.otf"
 size = 64
 font_data = SubResource( 1 )
 
-[sub_resource type="DynamicFontData" id=4]
+[sub_resource type="DynamicFontData" id=3]
 font_path = "res://MENU/texgyrechorus-mediumitalic.otf"
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=4]
 size = 40
 extra_spacing_space = 50
-font_data = SubResource( 4 )
+font_data = SubResource( 3 )
 
 [node name="MENU" type="CanvasLayer"]
 
@@ -45,7 +45,7 @@ margin_left = -65.0
 margin_top = -24.5
 margin_right = 70.0
 margin_bottom = 24.5
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "START"
 script = ExtResource( 3 )
 __meta__ = {
@@ -61,7 +61,7 @@ margin_left = -80.0
 margin_top = -67.0
 margin_right = 80.0
 margin_bottom = -27.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "CREDITS"
 script = ExtResource( 4 )
 __meta__ = {
