@@ -21,10 +21,12 @@ var text = ["Once upon a time, a little girl, was eating with his father.",
 			"[b]The little Girl : [/b] Thanks !"]
 var textLines
 var appearingText
+var appearingTextPercent
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	textIndice = 0
+	appearingTextPercent = 0.0
 	textLines = text.size()
 	appearingText = get_node("AppearingText")
 	appearingText.bbcode_enabled = true
@@ -33,20 +35,33 @@ func _ready():
 	timer = Timer.new()
 	add_child(timer)
 	
-	timer.wait_time = 4.0
+	timer.wait_time = 0.5
 	timer.connect("timeout", self, "_timeout")
 	timer.start()
 
 
 func _timeout():
-	if (textIndice < textLines):
-		appearingText.bbcode_text = text[textIndice]
-		textIndice = textIndice+1
+	appearingTextPercent = appearingTextPercent + 0.1
+	if (appearingTextPercent < 1.0):
+		appearingText.set_percent_visible(appearingTextPercent)
+		timer.wait_time = 0.5
 		timer.start()
-	else :
-		var status = get_tree().change_scene("res://LEVELS/LEVEL01/LEVEL01.tscn")
-		if ( status != OK ):
-			print("Error : could not load LEVEL01 scene from 00_Introduction scene")
+	elif (appearingTextPercent == 1.0):
+		appearingText.set_percent_visible(appearingTextPercent)
+		timer.wait_time = 1.0
+		timer.start()
+	else:
+		appearingTextPercent = 0
+		if (textIndice < textLines):
+			appearingText.set_percent_visible(appearingTextPercent)
+			appearingText.bbcode_text = text[textIndice]
+			textIndice = textIndice+1
+			timer.wait_time = 0.2
+			timer.start()
+		else :
+			var status = get_tree().change_scene("res://LEVELS/LEVEL01/LEVEL01.tscn")
+			if ( status != OK ):
+				print("Error : could not load LEVEL01 scene from 00_Introduction scene")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
