@@ -3,21 +3,21 @@
 [ext_resource path="res://STORY/00_Introduction/Story_00_Introduction.gd" type="Script" id=2]
 [ext_resource path="res://Godot-Fontpack/fonts/architect-s-daughter/ArchitectsDaughter.ttf" type="DynamicFontData" id=3]
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=1]
 size = 12
 outline_size = 1
 font_data = ExtResource( 3 )
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="DynamicFont" id=2]
 size = 12
 font_data = ExtResource( 3 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=3]
 size = 28
 outline_size = 1
 font_data = ExtResource( 3 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=4]
 size = 28
 font_data = ExtResource( 3 )
 
@@ -34,8 +34,8 @@ margin_left = -451.0
 margin_top = -298.0
 margin_right = 451.0
 margin_bottom = 298.0
-custom_fonts/bold_font = SubResource( 2 )
-custom_fonts/normal_font = SubResource( 1 )
+custom_fonts/bold_font = SubResource( 1 )
+custom_fonts/normal_font = SubResource( 2 )
 bbcode_enabled = true
 bbcode_text = "Once upon a time, a little girl, was eating with his father.
 [b]The father : [/b] Please, be a good girl, eat all your food
@@ -86,8 +86,8 @@ margin_left = -464.5
 margin_top = -66.0
 margin_right = 464.5
 margin_bottom = 66.0
-custom_fonts/bold_font = SubResource( 4 )
-custom_fonts/normal_font = SubResource( 3 )
+custom_fonts/bold_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 4 )
 scroll_active = false
 __meta__ = {
 "_edit_use_anchors_": false

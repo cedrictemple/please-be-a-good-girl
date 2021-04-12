@@ -29,6 +29,7 @@ func _ready():
 	appearingTextPercent = 0.0
 	textLines = text.size()
 	appearingText = get_node("AppearingText")
+	appearingText.set_percent_visible(appearingTextPercent)
 	appearingText.bbcode_enabled = true
 	appearingText.bbcode_text = text[textIndice]
 	textIndice = textIndice+1
