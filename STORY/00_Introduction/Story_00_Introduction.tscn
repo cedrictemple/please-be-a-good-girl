@@ -1,11 +1,16 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://MENU/texgyrechorus-mediumitalic.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://STORY/00_Introduction/Story_00_Introduction.gd" type="Script" id=2]
+[ext_resource path="res://Godot-Fontpack/fonts/architect-s-daughter/ArchitectsDaughter.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=2]
+size = 12
+outline_size = 1
+font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=1]
-size = 48
-font_data = ExtResource( 1 )
+size = 12
+font_data = ExtResource( 3 )
 
 [node name="Story_00_Introduction" type="CanvasLayer"]
 script = ExtResource( 2 )
@@ -15,11 +20,12 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -286.0
-margin_top = -173.5
-margin_right = 286.0
-margin_bottom = 173.5
-custom_fonts/mono_font = SubResource( 1 )
+margin_left = -451.0
+margin_top = -298.0
+margin_right = 451.0
+margin_bottom = 298.0
+custom_fonts/bold_font = SubResource( 2 )
+custom_fonts/normal_font = SubResource( 1 )
 bbcode_enabled = true
 bbcode_text = "Once upon a time, a little girl, was eating with his father.
 [b]The father : [/b] Please, be a good girl, eat all your food
