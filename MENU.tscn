@@ -5,14 +5,14 @@
 [ext_resource path="res://MENU/CreditsButton.gd" type="Script" id=4]
 
 [sub_resource type="DynamicFontData" id=1]
-font_path = "res://MENU/texgyrechorus-mediumitalic.otf"
+font_path = "res://Godot-Fontpack/fonts/architect-s-daughter/ArchitectsDaughter.ttf"
 
 [sub_resource type="DynamicFont" id=2]
 size = 64
 font_data = SubResource( 1 )
 
 [sub_resource type="DynamicFontData" id=3]
-font_path = "res://MENU/texgyrechorus-mediumitalic.otf"
+font_path = "res://Godot-Fontpack/fonts/architect-s-daughter/ArchitectsDaughter.ttf"
 
 [sub_resource type="DynamicFont" id=4]
 size = 40
@@ -24,10 +24,10 @@ font_data = SubResource( 3 )
 [node name="Title" type="Label" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -217.0
-margin_top = 11.0
-margin_right = 217.0
-margin_bottom = 79.0
+margin_left = -439.5
+margin_top = 13.0
+margin_right = 439.5
+margin_bottom = 124.0
 custom_fonts/font = SubResource( 2 )
 text = "Please, Be A Good Girl !"
 align = 1
@@ -41,10 +41,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -65.0
-margin_top = -24.5
-margin_right = 70.0
-margin_bottom = 24.5
+margin_left = -87.0
+margin_top = -38.0
+margin_right = 87.0
+margin_bottom = 38.0
 custom_fonts/font = SubResource( 4 )
 text = "START"
 script = ExtResource( 3 )
@@ -57,10 +57,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -80.0
-margin_top = -67.0
-margin_right = 80.0
-margin_bottom = -27.0
+margin_left = -109.0
+margin_top = -100.0
+margin_right = 109.0
+margin_bottom = -24.0
 custom_fonts/font = SubResource( 4 )
 text = "CREDITS"
 script = ExtResource( 4 )
