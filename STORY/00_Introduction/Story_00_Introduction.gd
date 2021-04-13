@@ -26,6 +26,11 @@ var textLineLength
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	var NextLevelButton = get_node("NextLevelButton")
+	var status = NextLevelButton.connect("pressed", self, "_nextLevel")
+	if ( status != OK ):
+		print("Error : could not attach callback to ignore button in Story_00_Introduction scene")
+	set_process_input(true)
 	textIndice = 0
 	appearingTextChars = 0
 	textLines = text.size()
@@ -63,10 +68,17 @@ func _timeout():
 			timer.wait_time = 0.05
 			timer.start()
 		else :
-			var status = get_tree().change_scene("res://LEVELS/LEVEL01/LEVEL01.tscn")
-			if ( status != OK ):
-				print("Error : could not load LEVEL01 scene from 00_Introduction scene")
+			_nextLevel()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+
+func _nextLevel():
+	var status = get_tree().change_scene("res://LEVELS/LEVEL01/LEVEL01.tscn")
+	if ( status != OK ):
+		print("Error : could not load LEVEL01 scene from 00_Introduction scene")
+
+func _input(_ev):
+	if Input.is_key_pressed(KEY_ESCAPE):
+		_nextLevel()
