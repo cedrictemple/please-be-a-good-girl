@@ -49,24 +49,22 @@ margin_bottom = 229.0
 custom_fonts/normal_font = SubResource( 3 )
 bbcode_enabled = true
 bbcode_text = "Please, Be a Good Girl is a 2D Game under GPLv3 License, created by Cédric Temple. Code is available on GitHub (https://github.com/cedrictemple/please-be-a-good-girl/).
-
 Main character credits to Pipoya (https://pipoya.itch.io/pipoya-free-2d-game-character-sprites) under license :
 - For commercial or personal use.
 - Use and edit freely.
 - Not redistribute or resell this assets.
 - It can be used for game development and other productions
-
+Font Architect's Daughter, used in credits, welcome and stories : Copyright (c) 2010, Kimberly Geswein (kimberlygeswein.com) under SIL OPEN FONT LICENSE Version 1.1 (http://scripts.sil.org/OFL)
 Special thanks to :
 * the team of Godot Engine (https://godotengine.org/), the game engine used to make this games ; 
 * Make Your Game - Event Orizon Studio team and theirs fabulous YouTube channel (in french language) dedicated to game producing (https://www.youtube.com/user/mafabrik2jeux)"
 text = "Please, Be a Good Girl is a 2D Game under GPLv3 License, created by Cédric Temple. Code is available on GitHub (https://github.com/cedrictemple/please-be-a-good-girl/).
-
 Main character credits to Pipoya (https://pipoya.itch.io/pipoya-free-2d-game-character-sprites) under license :
 - For commercial or personal use.
 - Use and edit freely.
 - Not redistribute or resell this assets.
 - It can be used for game development and other productions
-
+Font Architect's Daughter, used in credits, welcome and stories : Copyright (c) 2010, Kimberly Geswein (kimberlygeswein.com) under SIL OPEN FONT LICENSE Version 1.1 (http://scripts.sil.org/OFL)
 Special thanks to :
 * the team of Godot Engine (https://godotengine.org/), the game engine used to make this games ; 
 * Make Your Game - Event Orizon Studio team and theirs fabulous YouTube channel (in french language) dedicated to game producing (https://www.youtube.com/user/mafabrik2jeux)"
