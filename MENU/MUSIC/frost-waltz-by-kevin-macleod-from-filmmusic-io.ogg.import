@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/frost-waltz-by-kevin-macleod-from-filmmusic-io.ogg-1e104cf07f8efa39faf72ca67575857e.oggstr"
+
+[deps]
+
+source_file="res://MENU/MUSIC/frost-waltz-by-kevin-macleod-from-filmmusic-io.ogg"
+dest_files=[ "res://.import/frost-waltz-by-kevin-macleod-from-filmmusic-io.ogg-1e104cf07f8efa39faf72ca67575857e.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
