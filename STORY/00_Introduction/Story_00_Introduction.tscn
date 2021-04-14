@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
+[ext_resource path="res://STORY/00_Introduction/MUSIC/Myuu-TenderRemains.ogg" type="AudioStream" id=1]
 [ext_resource path="res://STORY/00_Introduction/Story_00_Introduction.gd" type="Script" id=2]
 [ext_resource path="res://Godot-Fontpack/fonts/architect-s-daughter/ArchitectsDaughter.ttf" type="DynamicFontData" id=3]
 
@@ -111,3 +112,7 @@ text = "Ignore"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+autoplay = true

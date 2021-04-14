@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Myuu-TenderRemains.ogg-0864490c57c83ae9ef6635809af93401.oggstr"
+
+[deps]
+
+source_file="res://STORY/00_Introduction/MUSIC/Myuu-TenderRemains.ogg"
+dest_files=[ "res://.import/Myuu-TenderRemains.ogg-0864490c57c83ae9ef6635809af93401.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
