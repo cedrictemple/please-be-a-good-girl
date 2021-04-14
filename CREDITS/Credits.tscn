@@ -4,13 +4,6 @@
 [ext_resource path="res://Godot-Fontpack/fonts/architect-s-daughter/ArchitectsDaughter.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://CREDITS/Credits.gd" type="Script" id=3]
 
-[sub_resource type="DynamicFontData" id=1]
-font_path = "res://Godot-Fontpack/fonts/architect-s-daughter/ArchitectsDaughter.ttf"
-
-[sub_resource type="DynamicFont" id=2]
-size = 80
-font_data = SubResource( 1 )
-
 [sub_resource type="DynamicFont" id=7]
 outline_size = 1
 font_data = ExtResource( 2 )
@@ -20,6 +13,13 @@ font_path = "res://Godot-Fontpack/fonts/architect-s-daughter/ArchitectsDaughter.
 
 [sub_resource type="DynamicFont" id=4]
 font_data = SubResource( 3 )
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Godot-Fontpack/fonts/architect-s-daughter/ArchitectsDaughter.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 80
+font_data = SubResource( 1 )
 
 [sub_resource type="DynamicFontData" id=5]
 font_path = "res://Godot-Fontpack/fonts/architect-s-daughter/ArchitectsDaughter.ttf"
@@ -31,15 +31,10 @@ font_data = SubResource( 5 )
 [node name="Credits" type="CanvasLayer"]
 script = ExtResource( 3 )
 
-[node name="Title" type="Label" parent="."]
-anchor_left = 0.5
-anchor_right = 0.5
-margin_left = -204.0
-margin_top = 5.0
-margin_right = 204.0
-margin_bottom = 144.0
-custom_fonts/font = SubResource( 2 )
-text = "CREDITS"
+[node name="BackgroundColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -52,6 +47,7 @@ anchor_bottom = 2.0
 margin_left = -521.0
 margin_top = -750.0
 margin_right = 521.0
+margin_bottom = 30.0
 custom_fonts/bold_font = SubResource( 7 )
 custom_fonts/normal_font = SubResource( 4 )
 bbcode_enabled = true
@@ -103,6 +99,37 @@ Special thanks to :
 * Make Your Game - Event Orizon Studio team and theirs fabulous YouTube channel (in french language) dedicated to game producing (https://www.youtube.com/user/mafabrik2jeux)"
 fit_content_height = true
 scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TopColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+margin_bottom = 126.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -204.0
+margin_top = 5.0
+margin_right = 204.0
+margin_bottom = 144.0
+custom_fonts/font = SubResource( 2 )
+text = "CREDITS"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BottomColorRect" type="ColorRect" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -128.0
+color = Color( 0, 0, 0, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
