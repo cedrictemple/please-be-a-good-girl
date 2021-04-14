@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/at-rest-by-kevin-macleod-from-filmmusic-io.ogg-50d2b2a35a271cb80aa7a77b0f1d5fd6.oggstr"
+
+[deps]
+
+source_file="res://CREDITS/MUSIC/at-rest-by-kevin-macleod-from-filmmusic-io.ogg"
+dest_files=[ "res://.import/at-rest-by-kevin-macleod-from-filmmusic-io.ogg-50d2b2a35a271cb80aa7a77b0f1d5fd6.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

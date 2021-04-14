@@ -1,10 +1,12 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://CREDITS/CloseButton.gd" type="Script" id=1]
 [ext_resource path="res://Godot-Fontpack/fonts/architect-s-daughter/ArchitectsDaughter.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://CREDITS/Credits.gd" type="Script" id=3]
+[ext_resource path="res://CREDITS/MUSIC/at-rest-by-kevin-macleod-from-filmmusic-io.ogg" type="AudioStream" id=4]
 
 [sub_resource type="DynamicFont" id=7]
+size = 20
 outline_size = 1
 font_data = ExtResource( 2 )
 
@@ -57,19 +59,29 @@ Main character credits to Pipoya (https://pipoya.itch.io/pipoya-free-2d-game-cha
 - Use and edit freely.
 - Not redistribute or resell this assets.
 - It can be used for game development and other productions
-Font Architect's Daughter, used in credits, welcome and stories : Copyright (c) 2010, Kimberly Geswein (kimberlygeswein.com) under SIL OPEN FONT LICENSE Version 1.1 (http://scripts.sil.org/OFL)
+
+Font Architect's Daughter, used in credits, menu and stories : Copyright (c) 2010, Kimberly Geswein (kimberlygeswein.com) under SIL OPEN FONT LICENSE Version 1.1 (http://scripts.sil.org/OFL)
+
 
 [b]Musics :[/b]
+
 * Menu :
 Frost Waltz by Kevin MacLeod
 Link: https://incompetech.filmmusic.io/song/3781-frost-waltz
 License: https://filmmusic.io/standard-license
+
 * Story - Introduction :
 Titre:  Tender Remains
 Auteur: Myuu
 Source: https://myuu.bandcamp.com
 Licence: https://creativecommons.org/licenses/by/3.0/deed.fr
 Téléchargement (11MB): https://auboutdufil.com/?id=492
+
+* Credits :
+At Rest by Kevin MacLeod
+Link: https://incompetech.filmmusic.io/song/3388-at-rest
+License: https://filmmusic.io/standard-license
+
 
 [b]Special thanks to :[/b]
 * the team of Godot Engine (https://godotengine.org/), the game engine used to make this games ; 
@@ -80,19 +92,29 @@ Main character credits to Pipoya (https://pipoya.itch.io/pipoya-free-2d-game-cha
 - Use and edit freely.
 - Not redistribute or resell this assets.
 - It can be used for game development and other productions
-Font Architect's Daughter, used in credits, welcome and stories : Copyright (c) 2010, Kimberly Geswein (kimberlygeswein.com) under SIL OPEN FONT LICENSE Version 1.1 (http://scripts.sil.org/OFL)
+
+Font Architect's Daughter, used in credits, menu and stories : Copyright (c) 2010, Kimberly Geswein (kimberlygeswein.com) under SIL OPEN FONT LICENSE Version 1.1 (http://scripts.sil.org/OFL)
+
 
 Musics :
+
 * Menu :
 Frost Waltz by Kevin MacLeod
 Link: https://incompetech.filmmusic.io/song/3781-frost-waltz
 License: https://filmmusic.io/standard-license
+
 * Story - Introduction :
 Titre:  Tender Remains
 Auteur: Myuu
 Source: https://myuu.bandcamp.com
 Licence: https://creativecommons.org/licenses/by/3.0/deed.fr
 Téléchargement (11MB): https://auboutdufil.com/?id=492
+
+* Credits :
+At Rest by Kevin MacLeod
+Link: https://incompetech.filmmusic.io/song/3388-at-rest
+License: https://filmmusic.io/standard-license
+
 
 Special thanks to :
 * the team of Godot Engine (https://godotengine.org/), the game engine used to make this games ; 
@@ -149,3 +171,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+autoplay = true
